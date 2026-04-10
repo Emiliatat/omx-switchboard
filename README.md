@@ -1,5 +1,13 @@
 # omx-switchboard
 
+> Autonomous workflow routing for Codex. Let AI decide when to stay native, when to plan, and when to escalate.
+
+## Languages
+
+- [English](./README.md)
+- [简体中文](./docs/i18n/README.zh-CN.md)
+- [日本語](./docs/i18n/README.ja.md)
+
 `omx-switchboard` is a Codex plugin project that lets AI choose the right operating mode for the task instead of making the user micro-manage workflow selection:
 
 - keep small, concrete tasks on native Codex
