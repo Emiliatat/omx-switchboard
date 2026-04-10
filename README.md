@@ -1,6 +1,6 @@
 # omx-switchboard
 
-`omx-switchboard` is a Codex plugin project that turns workflow choice into a deterministic policy:
+`omx-switchboard` is a Codex plugin project that lets AI choose the right operating mode for the task instead of making the user micro-manage workflow selection:
 
 - keep small, concrete tasks on native Codex
 - route ambiguous tasks to `deep-interview`
@@ -16,13 +16,19 @@ It ships in two layers:
 
 ## Why this exists
 
-OMX is powerful, but the wrong mode is expensive:
+Native Codex, `deep-interview`, `ralplan`, `ralph`, and `team` are all useful, but they fit different task shapes.
 
-- small tasks become slower if they are over-orchestrated
-- vague tasks drift if they are executed too early
-- parallel modes add operational cost when the task is really single-owner work
+The problem this project tries to solve is not "OMX costs too much." The real goal is to let AI decide when it should stay lightweight, when it should plan first, and when it should escalate into a stronger workflow without the user having to specify the mode every time.
 
-This project adds a stable routing policy so Codex or OMX is chosen on purpose instead of by habit.
+In practice that means:
+
+- small concrete tasks stay in native Codex
+- vague or underspecified tasks move to discovery-oriented modes
+- design-heavy work moves to planning-oriented modes
+- execution-ready work moves to implementation-oriented modes
+- parallelizable work moves to `team` only when parallelism is actually justified
+
+This project adds a stable routing policy so mode selection becomes part of the system behavior, not something the user has to keep steering manually.
 
 ## What this repo installs
 
@@ -53,7 +59,7 @@ The shipped `openai.yaml` allows implicit invocation, so Codex can pull in `$omx
 
 ### 2. Deterministic default entrypoint
 
-For users who want guaranteed routing on every task, this project installs `omxr` and `omx-switchboard` launchers.
+For users who want guaranteed task-aware routing on every prompt, this project installs `omxr` and `omx-switchboard` launchers.
 
 Those launchers:
 
