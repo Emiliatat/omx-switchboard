@@ -322,6 +322,10 @@ If you fork this project, update the public metadata in:
 
 ## Attribution
 
-This project is influenced by and interoperates with `oh-my-codex`.
+This project is based on ideas and workflow patterns from `oh-my-codex`, and is designed to interoperate with it.
+
+Upstream repository:
+
+- `https://github.com/Yeachan-Heo/oh-my-codex`
 
 If your published version includes copied or adapted code from upstream projects such as `oh-my-codex` or `cli-in-wechat`, keep the upstream MIT notice and attribution with your distribution. See [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).

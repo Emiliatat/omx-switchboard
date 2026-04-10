@@ -277,6 +277,10 @@ python3 skills/omx-switchboard/scripts/dispatch_omx.py \
 
 ## 致谢与归属
 
-这个项目受 `oh-my-codex` 影响并与之协同工作。
+这个项目基于 `oh-my-codex` 的一些思路与工作流模式演化而来，并与其保持协同使用。
+
+上游仓库：
+
+- `https://github.com/Yeachan-Heo/oh-my-codex`
 
 如果你的版本包含来自 `oh-my-codex` 或 `cli-in-wechat` 的复制或改写内容，请保留上游 MIT 许可声明和归属说明。详见 [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)。

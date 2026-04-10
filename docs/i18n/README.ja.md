@@ -277,6 +277,10 @@ Fork する場合は、次の公開メタデータも自分用に更新してく
 
 ## 帰属表示
 
-このプロジェクトは `oh-my-codex` から影響を受け、相互運用を想定しています。
+このプロジェクトは `oh-my-codex` の考え方とワークフローパターンを土台の一部としており、相互運用を前提にしています。
+
+上流リポジトリ：
+
+- `https://github.com/Yeachan-Heo/oh-my-codex`
 
 `oh-my-codex` や `cli-in-wechat` からコピーまたは改変した内容を含む場合は、上流の MIT ライセンス表示と帰属情報を維持してください。詳細は [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md) を参照してください。
