@@ -1,0 +1,40 @@
+{
+  "name": "omx-switchboard",
+  "version": "0.1.0",
+  "description": "Task-aware routing layer that chooses between native Codex and oh-my-codex workflows.",
+  "author": {
+    "name": "Emiliatat",
+    "url": "https://github.com/Emiliatat"
+  },
+  "homepage": "https://github.com/Emiliatat/omx-switchboard",
+  "repository": "https://github.com/Emiliatat/omx-switchboard",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "oh-my-codex",
+    "router",
+    "workflow",
+    "skill",
+    "automation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OMX Switchboard",
+    "shortDescription": "Automatically choose the right Codex or OMX workflow",
+    "longDescription": "OMX Switchboard is a policy-driven routing layer for Codex. It keeps small tasks on native Codex, escalates ambiguous work to deep-interview, pushes design-heavy work to ralplan, and only uses ralph or team when the task is truly execution-ready. Install the `omxr` launcher to make automatic routing your default entrypoint.",
+    "developerName": "Emiliatat",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Emiliatat/omx-switchboard",
+    "defaultPrompt": [
+      "Use $omx-switchboard to choose the best workflow for this task.",
+      "Route this engineering task between native Codex and OMX.",
+      "Pick the safest low-overhead execution mode for this request."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

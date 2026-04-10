@@ -1,0 +1,7 @@
+interface:
+  display_name: "OMX Switchboard"
+  short_description: "Choose the right OMX workflow for each Codex task"
+  default_prompt: "Use $omx-switchboard to choose the lowest-overhead workflow that still protects correctness for this task."
+
+policy:
+  allow_implicit_invocation: true
